@@ -1,0 +1,193 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+header nav ul > li:first-of-type{
+  font-size: x-large;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav ul > * {
+  float: left;
+  width: 10%;
+}
+header + section{
+  background: linear-gradient(to right,  rgb(114, 90, 92), white);
+  height: 500px;
+  padding: 40px 100px;
+  color: white;
+}
+header + section > span:first-of-type{
+  font-size: xxx-large;
+}
+header{
+  height: 55px;
+}
+
+header + section > span + p + span a{
+  color: #fff;
+  border: 1px solid black;
+  padding: 10px;
+  background: black;
+  margin-top: 15px;
+}
+header + section > span + p + span + section{
+  margin-top: 80px;
+  border: 1px solid black;
+  background: black;
+  width: 30%;
+  height: 250px ;
+  padding-top: 10px;
+  text-align: center;
+}
+header + section > span + p + span + section p span{
+  font-size: xx-large;
+  line-height: 70px;
+}
+header + section > span + p + span + section p + span{
+  border: 1px solid white;
+  background: white;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 30px;
+
+}
+header + section + section{
+  margin: 0 auto;
+  height: 600px;
+  padding: 200px 0;
+  width: 70%;
+}
+header + section + section > *{
+  float: left;
+  width: 33.333%;
+  padding: 0 5px;
+  text-align: center;
+
+}
+header + section + section + section{
+  background: rgb(236, 238, 238);
+}
+header + section + section + section section{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 80px;
+  height: 550px;
+}
+header + section + section + section > section > *{
+  float: left;
+  width: 50%;
+  text-align: left;
+  height: 350px;
+}
+section h3,
+section.clear > section > span + p > span{
+  font-size: xx-large;
+  font-weight: bold;
+}
+section h3 + p + span a{
+  border: 1px solid black;
+  display: inline-block;
+  margin-top: 40px;
+  padding: 15px;
+  background: black;
+  color: white;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+header + section + section + section + section{
+  width: 70%;
+  height: 400px;
+  margin: auto auto;
+  padding-top: 30px;
+}
+header + section + section + section + section > *{
+  float: left;
+  width: 33.333%;
+  text-align: center;
+}
+header + section + section + section + section section > img + *{
+  border: 1px solid black;
+  color: white;
+  display: inline-block;
+  background: black;
+  padding: 15px;
+  margin: 0;
+}
+header + section + section + section + section + section section{
+  height: 300px;
+  width: 84%;
+  margin:50px 0 0 16%;
+  background: rgb(236, 238, 238);
+  padding: 50px 0 0 30px;
+}
+section.clear > section > span + p {
+  font-size: x-large;
+}
+section.clear > section > span + p + span > a{
+  border: 1px solid black;
+  background: black;
+  color: white;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px;
+}
+header + section + section + section + section + section + section{
+  height: 1000px;
+  margin-top: 100px;
+}
+header + section + section + section + section + section + section > span{
+  font-size: xx-large;
+  text-align: center;
+  display: block;
+  height: 100px;
+}
+header + section + section + section + section + section + section > section > * {
+  float: left;
+  width: 33.33%;
+  /* height: 400px;
+  height: 200px; */
+}
+
+header + section + section + section + section + section + section > section{
+  width: 70%;
+  margin: 0 auto;
+}
+/* section.image > img:first-of-type + img,
+section.image > img:first-of-type + img + img + img,
+section.image > img:first-of-type + img+ img + img+ img + img
+{
+  height: 600px;
+} */

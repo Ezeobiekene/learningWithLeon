@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+header, 
+footer {
+    width: 100%;
+    height: 200px;
+    border: 5px solid black;
+    clear: both;
+    margin: 10px 0;
+}
+p{
+    color:rgb(46, 220, 220);
+}
+.container {
+    display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.upper,
+.lower {
+    background: lavender;
+    margin: 10px 0;
+    width: 700px;
+    height: 250px;
+    border: 5px solid black;
+}
+/* .upper {
+    background: yellow;
+    width: 33.333%;
+    height: 250px;
+    border: 5px solid black;
+    float: left;
+}
+.lower {
+    background: plum;
+    width: 50%;
+    height: 350px;
+    border: 5px solid black;
+    float: left;
+} */

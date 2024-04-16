@@ -1,0 +1,43 @@
+body{
+    background: lightblue;
+    border: 5px solid rgb(92, 164, 92);
+    color: white;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 50px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+}
+h2{
+    font-weight: bolder;
+}
+img{
+    width: 210px;
+    height: 300px;
+    float: right;
+}
+nav{
+    text-align: center;
+}
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+nav  span + a{
+    color: rgb(92, 164, 92);
+}
+nav span {
+    color: gray;
+}
+p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer nav a{
+    color:rgb(92, 164, 92);
+}

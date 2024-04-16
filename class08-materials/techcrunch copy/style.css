@@ -1,0 +1,57 @@
+header nav ul {
+    float: left;
+}
+nav{
+    height: 1500px;
+}
+.logo{
+    width: 20px;
+    height: 20px;
+}
+.clear{
+    clear: both;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body > section > * {
+    float: left;
+    width: 20%;
+}
+body section main{
+    width: 80%;
+}
+h4 + section > *{
+    float: left;
+    width: 75%;
+}
+h4{
+    width: 100%;
+}
+main > *{
+    float: left;
+    width: 30%;
+}
+section.content{
+    height: 500px;
+}
+main > section{
+    width: 70%;
+}
+span{
+    display: block;
+}
+main section h1 + span + img{
+    width: 700px;
+    height: 350px;
+}
+
+h4 + section article a > *{
+    float: left; 
+    width: 33%;
+    margin: 5px 1px;
+} 

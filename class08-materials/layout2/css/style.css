@@ -1,0 +1,123 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+header{
+  height: 100px;
+}
+/* body {
+margin: 0 100px;
+} */
+
+.logo{
+  height: 20px;
+  width: 20px;
+  margin: 0 350px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav ul > *{
+  float: left;
+  width: 8%;
+}
+header nav ul li.listlogo{
+  width: 65%;
+}
+
+footer {
+
+}
+header,
+main{
+  background:rgb(101, 112, 135) ;
+}
+header a{
+  text-decoration: none;
+  color: white;
+}
+ul{
+  list-style: none;
+}
+h1 {
+  margin-top: 0;
+}
+main{
+  text-align: center;
+  padding-bottom: 50px;
+  color: lightgrey;
+}
+main + section + section + section,
+main + section{
+  padding: 50px;
+  text-align: center;
+}
+main + section + section > *{
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+main + section + section + section a,
+main + section + section a{
+  text-decoration: none;
+  color: #000;
+  border: 1px solid black;
+  padding: 5px;
+}
+main + section + section{
+  height: 470px;
+  padding: 50px 0;
+  background-color: lightgray;
+}
+main + section ,
+main + section + section + section > section{
+  margin: 0 20%;
+}
+footer section{
+  float: left;
+  width: 20%;
+}
+.eighty{
+  width: 80%;
+}
+footer ul > *{
+  float: left;
+  width: 9%;
+}
+footer nav,
+footer ul,
+a{
+  margin: 0;
+  padding-inline-start: 0;
+  padding-bottom: 25px;
+  text-decoration: none;
+  color: white;
+}
+footer{
+  height: 200px;
+  background: rgb(22, 31, 42);
+  color: grey;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

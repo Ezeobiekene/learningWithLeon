@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+header, 
+footer {
+    background-color: aqua;
+    width: 100%;
+    height: 150px;
+    border: 5px solid black;
+    clear: both;
+}
+.upper {
+    background: yellow;
+    width: 100%;
+    height: 350px;
+    border: 5px solid black;
+    float: left;
+}
+.middle {
+    background: red;
+    width: 33.333%;
+    height: 300px;
+    border: 5px solid black;
+    float: left;  
+}
+.lower {
+    background: plum;
+    width: 66.666%;
+    height: 300px;
+    border: 5px solid black;
+    float: left;
+}

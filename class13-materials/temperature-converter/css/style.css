@@ -1,0 +1,35 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body section{
+  height: 300px;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: rgb(206, 219, 235);
+  color: rgb(110, 110, 110);
+  border: 1px solid rgb(126, 171, 226);
+  padding: 50px;
+  border-radius: 25px;
+}
+button,
+input{
+  border-radius: 10px;
+}
+body *{
+  text-align: center;
+  padding: 10px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

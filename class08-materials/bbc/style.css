@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+header {
+    background: black;
+    height: 60px;
+    width: 100%;
+    color: white;
+}
+header > nav *{
+    float: left;
+    width: 10%;
+}
+header ul{
+    width: 80%;
+    list-style: none;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul li search,
+ul li search form,
+ul li search form input{
+    width: 100%;
+}
+header + section {
+    clear: both;
+    color: gray;
+}
+header + section * {
+    float: left;
+    width: 20%;
+    height: 55px;
+}
+section > h1{
+    width: 80%;
+}
+main > *,
+main  section + section article{
+    float: left;
+    width: 50%;
+    height: 200px;
+}
+main  section + section article h2{
+    margin: 2px;
+}
+main section{
+    height: 400px;
+}
+main + h1 + section *{
+    float: left;
+    width: 33.333%;
+}
+img{
+    width: 100px;
+    height: 100px;
+}

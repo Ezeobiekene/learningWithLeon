@@ -1,0 +1,142 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear,
+.clear1 {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body  {
+
+}
+nav{
+  padding-bottom: 100px;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav ul > *{
+  float: left;
+  width: 8%;
+  margin: 0 5px;
+  text-align: end;
+}
+li.home{
+  width: 20%;
+  margin-left: 40px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.section1{
+  background-image: url("section1_background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px 0 50px 50px;
+  height: 400px;
+}
+
+.section2{
+  background-image: url("section2_background.jpeg");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 0 50px 50px;
+  height: 550px;
+  padding: 50px;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+ul{
+  list-style: none;
+}
+section.section2 section > span{
+  color: rgb(245, 155, 29);
+}
+form input + a,
+section.section2 section a {
+  border: 1px solid rgb(245, 155, 29);
+  background: rgb(245, 155, 29);
+  padding: 10px;
+  color: white;
+}
+section.section2 section{
+  width: 450px;
+  margin: 50px 0 0 45%;
+}
+body section.section1 + section.section2 + section{
+  background: rgb(240, 244, 246);
+  padding: 50px;
+  text-align: center;
+  height: 1000px;
+}
+body section.section1 + section.section2 + section span,
+.orange{
+  color: rgb(245, 155, 29);
+}
+body section.section1 + section.section2 + section nav{
+  margin-left: 30%;
+}
+body section.section1 + section.section2 + section section{
+  width: 70%;
+  margin: 0 auto;
+}
+body section.section1 + section.section2 + section img{
+  float: left;
+  width: 22%;
+  margin: 15px 15px;
+}
+h1,
+h4{
+  font-size: xxx-large;
+}
+h2,
+h3{
+  font-size: xx-large;
+}
+.clear1{
+  background: linear-gradient(white,  rgb(240, 244, 246));
+  padding: 50px;
+  text-align: center;
+}
+.clear1 > p span{
+  font-size: x-large;
+}
+.clear1 > p + p{
+  float: left;
+  width: 50%;
+}
+.clear1 > p+ p + p{
+  float: left;
+  width: 50%;
+}
+.clear1 img{
+  width: 70%;
+}
+section.clear1 + section{
+  padding: 50px;
+  text-align: center;
+}
+section.clear1 + section p+p{
+ color: rgb(83, 83, 83);
+}
