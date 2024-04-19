@@ -1,13 +1,31 @@
-//Create a button that adds 1 to a botScore stored in localStorage 
-if(!localStorage.getItem('botScore')){
-    localStorage.setItem('botScore', 0)
+//Example fetch using pokemonapi.co
+document.querySelector('button').addEventListener('click', getFetch)
+
+function getFetch(){
+  const choice = document.querySelector('input').value
+  console.log(choice)
+  const url = `https://openlibrary.org/isbn/${choice}.json`
+
+  fetch(url)
+      .then(res => res.json()) // parse response as JSON
+      .then(data => {
+        console.log(data)
+
+        if(!localStorage.getItem('books')){
+            localStorage.setItem('books', data.title)
+        }else{
+            let books = localStorage.getItem('books') + ' ; ' + data.title
+            localStorage.setItem('books', books)
+        }
+        
+
+        // 
+
+        document.querySelector('h2').innerText +=  localStorage.getItem('books')
+        // document.querySelector('h3').innerText = data.type.key
+    
+      })
+      .catch(err => {
+          console.log(`error ${err}`)
+      });
 }
-
-document.querySelector('button').addEventListener('click', anothaOne)
-
-function anothaOne(){
-    let botScore = Number(localStorage.getItem('botScore'))
-    botScore = botScore + 1
-    localStorage.setItem('botScore', botScore)
-}
-
