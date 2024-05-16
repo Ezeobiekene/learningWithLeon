@@ -31,12 +31,12 @@ class Front extends Contractor{
 class Back extends Contractor{
     constructor(name,role,tech){
         super(name,role)
-        this._tech = tech
+        this._tech = techxsiu9
     }
     get tech(){
         return this._tech
     }
-    sayHello(){
+    sayHello(){f
         console.log(`Hello, I am on the ${this._role} team at #100Devs and I use ${this._tech}`)
     }
 }
