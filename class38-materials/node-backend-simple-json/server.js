@@ -1,8 +1,6 @@
-
-// This are the modulues
-const http = require('http'); //helps communicate with the server
-const fs = require('fs') //access disc and drive
-const url = require('url'); 
+const http = require('http');
+const fs = require('fs')
+const url = require('url');
 const querystring = require('querystring');
 const figlet = require('figlet')
 
